@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінка для тестів</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            color: blue; /* Це наслідуватимуть всі елементи, що містяться в тілі */
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: red; /* Специфічне правило для заголовку */
+        }
+        p {
+            color: green; /* Стиль для всіх параграфів */
+        }
+
+        .special {
+            color: orange; /* Стиль для елементів з класом special */
+        }
+
+        #unique {
+            color: purple; /* Стиль для елементів з ідентифікатором unique */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Сторінка для тестів</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="Laba2.html">Лаба 2</a></li>
+                <li><a href="test.html">Тестова сторінка</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Це заголовок H1.Наслідує колір blue від body</h1> <!-- Наслідує колір blue від body -->
+    <h2>Це заголовок H2.Має специфічне правило і використовує red</h2> <!-- Має специфічне правило і використовує red -->
+    <p>Це абзац тексту. Наслідує колір і шрифт від body.//Більше не Наслідує, оскільки прописаний тег для p</p>
+    <p>Цей текст буде зеленим. Використовується селектор по тегу</p>
+    <p class="special">Цей текст буде оранжевим. Використовується класс .special</p>
+    <p id="unique">Цей текст буде фіолетовим. Використовується id #unique</p> 
+</body>
+<footer>
+    <p>&copy; 2024 Моя Персональна Сторінка</p>
+</footer>
+</html>
