@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Example</title>
+    <style>
+        /* Базові стилі для сторінки */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+        /* Стиль для паралакс секції */
+        .parallax {
+            /* Фонове зображення */
+            background-image: url('peakpx (2).jpg');
+            height: 500px;
+            background-attachment: fixed; /* Ефект паралаксу */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Контент на сторінці */
+        .content {
+            height: 200px;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Вимкнення ефекту паралаксу для мобільних пристроїв та планшетів */
+        @media only screen and (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll; /* Фіксоване фонове зображення вимкнено */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="Laba2.html">Лаба 2</a></li>
+                <li><a href="test.html">Тестова сторінка</a></li>
+                <li><a href="responsive-flex.html">We are Europe</a></li>
+                <li><a href="parallax.html">Parallax</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Перша секція з паралаксом -->
+    <div class="parallax"></div>
+
+    <!-- Контент -->
+    <div class="content">
+        <h1>Parallax Effect</h1>
+        <p>Scroll down to see the parallax effect in action.</p>
+    </div>
+
+    <!-- Друга секція з паралаксом -->
+    <div class="parallax"></div>
+
+    <!-- Ще один контент -->
+    <div class="content">
+        <h1>More Content</h1>
+        <p>This is a simple example of how to use the parallax effect on your website.</p>
+    </div>
+
+</body>
+</html>
